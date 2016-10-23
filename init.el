@@ -132,27 +132,6 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 
-;; Use Cmd as meta, don't use Option
-(setq mac-command-modifier 'meta)
-(setq mac-option-key-is-meta nil)
-(setq mac-option-modifier nil)
-
-;; Faster fullscreen
-(setq ns-use-native-fullscreen nil)
-
-;; Toggle fullscreen with f11
-(global-set-key (quote [f11]) 'toggle-frame-fullscreen)
-
-;; No need for the toolbar, especiall in fullscreen
-(tool-bar-mode 0)
-
-;; Open this file with f12 for convenience
-(defun open-dot-emacs-file ()
-  (interactive)
-  (find-file "~/.emacs.d/init.el" t))
-
-(global-set-key (quote [f12]) (quote open-dot-emacs-file))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

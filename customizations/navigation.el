@@ -59,3 +59,10 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;; Open this file with f12 for convenience
+(defun open-dot-emacs-file ()
+  (interactive)
+  (find-file "~/.emacs.d/init.el" t))
+
+(global-set-key (quote [f12]) (quote open-dot-emacs-file))

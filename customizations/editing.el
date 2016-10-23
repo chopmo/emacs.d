@@ -25,6 +25,11 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+;; OSX: Use Cmd as meta, don't use Option
+(setq mac-command-modifier 'meta)
+(setq mac-option-key-is-meta nil)
+(setq mac-option-modifier nil)
+
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)
 
