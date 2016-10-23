@@ -66,3 +66,8 @@
   (find-file "~/.emacs.d/init.el" t))
 
 (global-set-key (quote [f12]) (quote open-dot-emacs-file))
+
+(global-set-key (kbd "s-J") 'windmove-left)
+(global-set-key (kbd "s-K") 'windmove-down)
+(global-set-key (kbd "s-I") 'windmove-up)
+(global-set-key (kbd "s-L") 'windmove-right)
