@@ -67,7 +67,11 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; Mobile org sync
+    org-mobile-sync
+    ))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -131,6 +135,9 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;; Org setup
+(load "org.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
