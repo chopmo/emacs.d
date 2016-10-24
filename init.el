@@ -71,6 +71,9 @@
 
     ;; Mobile org sync
     org-mobile-sync
+
+    ;; Mode for editing CoffeeScript
+    coffee-mode
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -147,7 +150,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (coffee-mode tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
