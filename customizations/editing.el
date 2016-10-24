@@ -76,3 +76,6 @@
 (setq electric-indent-mode nil)
 
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Disable old window switching so I can get used to Windmove
+(global-unset-key (kbd "C-x o"))
