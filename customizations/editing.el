@@ -83,3 +83,9 @@
 ;; Always remove trailing whitespace before saving a file, because it
 ;; looks nice in diffs.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Always revert buffers to the file version. This is handy when
+;; switching branches from the command line. Also, if the contents of
+;; a file has changed, I am never interested in seeing the old
+;; contents in the buffer.
+(global-auto-revert-mode 1)
