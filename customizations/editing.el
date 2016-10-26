@@ -79,3 +79,7 @@
 
 ;; Disable old window switching so I can get used to Windmove
 (global-unset-key (kbd "C-x o"))
+
+;; Always remove trailing whitespace before saving a file, because it
+;; looks nice in diffs.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
