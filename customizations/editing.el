@@ -89,3 +89,15 @@
 ;; a file has changed, I am never interested in seeing the old
 ;; contents in the buffer.
 (global-auto-revert-mode 1)
+
+;; I've always found that highlighting the symbol at point is very
+;; useful, but it causes a lot of visual noise if it happens
+;; automatically. So I'm defining a function to toggle it on and off
+;; and binding it to Super-.
+(defun jpt-toggle-mark-word-at-point ()
+  (interactive)
+  (if hi-lock-interactive-patterns
+      (unhighlight-regexp (car (car hi-lock-interactive-patterns)))
+    (highlight-symbol-at-point)))
+
+(global-set-key (kbd "s-.") 'jpt-toggle-mark-word-at-point)
