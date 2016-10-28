@@ -94,6 +94,7 @@
 ;; useful, but it causes a lot of visual noise if it happens
 ;; automatically. So I'm defining a function to toggle it on and off
 ;; and binding it to Super-.
+(require 'hi-lock)
 (defun jpt-toggle-mark-word-at-point ()
   (interactive)
   (if hi-lock-interactive-patterns
