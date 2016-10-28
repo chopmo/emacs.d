@@ -140,7 +140,7 @@
 (load "setup-js.el")
 
 ;; Org setup
-(load "org.el")
+(load "org-setup.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
