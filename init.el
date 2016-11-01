@@ -1,5 +1,5 @@
 ;; This config was originally based on http://www.braveclojure.com/basic-emacs/
-;; 
+;;
 ;; Thanks for a great starting point!!
 
 
@@ -74,6 +74,9 @@
 
     ;; Mode for editing CoffeeScript
     coffee-mode
+
+    ;; Like ack but faster
+    ag
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -100,7 +103,7 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -147,15 +150,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ag-arguments
+   (quote
+    ("--smart-case" "--nogroup" "--column" "--ignore" "log" "--")))
  '(coffee-tab-width 2)
+ '(org-agenda-files (quote ("~/notes/notes.org" "~/notes/mobile.org")))
  '(package-selected-packages
    (quote
-    (coffee-mode tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (ag coffee-mode tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
