@@ -76,3 +76,17 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+(global-set-key (kbd "s-1") 'delete-other-windows)
+
+(global-set-key (kbd "s-2") (lambda () (interactive)
+                              (split-window-below)
+                              (balance-windows)))
+
+(global-set-key (kbd "s-3") (lambda () (interactive)
+                              (split-window-right)
+                              (balance-windows)))
+
+(global-set-key (kbd "s-0") (lambda () (interactive)
+                              (delete-window)
+                              (balance-windows)))
