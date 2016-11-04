@@ -71,3 +71,9 @@
 (global-set-key (kbd "s-K") 'windmove-down)
 (global-set-key (kbd "s-I") 'windmove-up)
 (global-set-key (kbd "s-L") 'windmove-right)
+
+(global-set-key (kbd "C-c x") 'browse-url-at-point)
+
+
+(global-set-key (kbd "s-i") 'projectile-ag)
+(global-set-key (kbd "s-o") 'projectile-find-file)
