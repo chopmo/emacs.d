@@ -154,13 +154,15 @@
    (quote
     ("--smart-case" "--nogroup" "--column" "--ignore" "log" "--")))
  '(coffee-tab-width 2)
+ '(linum-format "%4d")
  '(org-agenda-files (quote ("~/notes/notes.org" "~/notes/mobile.org")))
  '(package-selected-packages
    (quote
-    (ag coffee-mode tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (rspec-mode ag coffee-mode tagedit smex projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider)))
+ '(ruby-insert-encoding-magic-comment nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(linum ((t (:foreground "gray65")))))
