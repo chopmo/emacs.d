@@ -102,3 +102,4 @@
     (highlight-symbol-at-point)))
 
 (global-set-key (kbd "s-.") 'jpt-toggle-mark-word-at-point)
+(global-set-key (kbd "s-b") 'ido-switch-buffer)
